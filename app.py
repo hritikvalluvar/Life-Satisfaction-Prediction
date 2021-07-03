@@ -12,12 +12,13 @@ def main():
     input = st.slider('GDP per capita(USD)',0.0, 130000.0)
     gdp = [[input]]
     if gdp:
-        model_output(gdp)
+        output = model_output(gdp)
+        st.write("Life satisfaction of a country who's GDP per capita is **${}** might be **{}**.".format(input, output))
     
+@st.cache    
 def model_output(gdp):
     model = load('model.joblib')
-    output = '{0:.3g}'.format(float(model.predict(gdp)))
-    st.write("Life satisfaction of a country who's GDP per capita is **${}** might be **{}**.".format(input, output))
+    return '{0:.3g}'.format(float(model.predict(gdp)))
 
 
 if __name__ == '__main__':
