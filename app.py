@@ -15,7 +15,7 @@ def main():
     gdp = [[input]]
     if gdp:
         output = '{0:.3g}'.format(float(model.predict(gdp)))
-        st.write("Life satisfaction of a country who's GDP per capita is **{}** might be **{}**.".format(input, output))
+        st.write("Life satisfaction of a country who's GDP per capita is **${}** might be **{}**.".format(input, output))
     
 
 
