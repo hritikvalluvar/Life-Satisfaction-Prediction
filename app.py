@@ -1,9 +1,7 @@
 import streamlit as st
 from joblib import load
 
-def main():
-    model = load('model.joblib')
-    
+def main(): 
     st.title("Life Satisfaction Prediction")
     st.write("Enter the calue of your country's GDP per capita using the slider below:")
     st.sidebar.title("Developer's Contact")
@@ -14,9 +12,12 @@ def main():
     input = st.slider('GDP per capita(USD)',0.0, 130000.0)
     gdp = [[input]]
     if gdp:
-        output = '{0:.3g}'.format(float(model.predict(gdp)))
-        st.write("Life satisfaction of a country who's GDP per capita is **${}** might be **{}**.".format(input, output))
+        model_output(gdp)
     
+def model_output(gdp):
+    model = load('model.joblib')
+    output = '{0:.3g}'.format(float(model.predict(gdp)))
+    st.write("Life satisfaction of a country who's GDP per capita is **${}** might be **{}**.".format(input, output))
 
 
 if __name__ == '__main__':
