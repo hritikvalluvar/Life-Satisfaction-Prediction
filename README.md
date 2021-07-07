@@ -3,7 +3,18 @@ Life Satisfaction Index can be predicted by using GDP per capita as the features
 
 **Note:** It's important for data scientist or ML practioners to be able to deploy their model.
 
+## Simple Linear Model
+
+
+life_satisfaction = &theta;<sub>o</sub> + &theta;<sub>1</sub> * GDP_percapita
+
+where &theta;<sub>o</sub> and &theta;<sub>1</sub> are model features.
+
+---
+
 <img alt="Heroku" src="https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white"/>
+
+---
 
 ## **Demo** 
 **Link:** https://life-satisfaction-prediction.herokuapp.com/
