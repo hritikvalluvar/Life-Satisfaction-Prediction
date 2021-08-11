@@ -32,12 +32,19 @@ Change working directory
 
 `cd Life-Satisfaction-Prediction`
 
+Create virtual environement
+
+`python3 -m pip virtualenv .env`
+
 Activate virtual environment
 
-`source env/bin/activate`
+`source .env/bin/activate`
+
+Install dependencies
+
+`python3 -m pip install -r requirements.txt`
 
 Run app.py on streamlit
-
 
 `streamlit run app.py`
 
