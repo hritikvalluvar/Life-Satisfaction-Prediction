@@ -17,7 +17,9 @@ where &theta;<sub>o</sub> and &theta;<sub>1</sub> are model features.
 ---
 
 ## **Demo** 
-**Link:** https://life-satisfaction-prediction.herokuapp.com/
+
+Click [here](https://hritikvalluvar-life-satisfaction-prediction-app-32rwt6.streamlit.app/) to see the demo.
+
 ![demo](https://github.com/hritikvalluvar/Life-Satisfaction-Prediction/blob/main/demo.png)
 
 ## **Usage**
